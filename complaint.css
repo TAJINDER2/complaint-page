@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	background-color: #E0C097;
+    font-family: 'josefin Sans', Sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #2D2424;
+    
+}
+
+header{
+    padding: 18px 25px 5px;
+    background-color: #2D2424;
+    color: #fff;
+}
+
+.row {
+    --bs-gutter-x: 0%;
+}
+
+.form-col{
+    padding: 3%;
+    font-weight: bold;
+}
+
+form{
+    margin: 0 2%;
+}
+#notes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 30%;
+    border:2px solid brown; */
+}
+.note{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    width:300px;
+    padding-left: 50px;
+    padding-top: 15px;
+    height: 250px;
+}
+.submit{
+    padding: 1% 6%;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+.deletebtn{
+    color:white;
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+.editbtn{
+    color:white;
+    background-color:rgb(32, 32, 32);
+}
+input[type="text"], input[type="email"], input[type="number"]{
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    border-bottom: #a08173 solid 1px;
+    width: 250%;
+    transition: border-bottom 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    padding: 5px 12px;
+}
+
+input:focus{
+    border-bottom: #2D2424 solid 1.5px;   
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+textarea{
+    margin: 10px 0;
+    width: 130%;
+    height: 100px;
+    padding: 12px;
+    border: transparent;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border-bottom: solid 1px #a08173;
+    transition: border 0.8s ease-in-out;
+}
+
+textarea:focus{
+    border: #2D2424 solid 1px;
+}
+
+.complaint-img{
+    padding:0;
+}
+
+.complaint-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.display{
+    overflow-x:auto;
+    background-color: #fff2e1;
+    text-align: center;
+    padding: 5% 4%;
+}
+
+table{
+    margin: 3% auto;
+    width: 100%;
+    border: 1px solid #2D2424;
+}
+
+th, td {
+    padding: 15px;
+}
+
+tr:nth-child(odd){
+    background-color: #E0C097;
+}
+
+tr:first-child{
+    border: 1px solid #2D2424;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #B85C38;
+    color: white;
+    font-size: 18px;
+    
+}
+
+/* tr:hover {
+    background-color: #b8a58b;
+} */
+
+
+
+@media only screen and (max-width: 600px) {
+    .complaint-img img{
+        height: 300px;
+        width:400px;
+        margin:5px 10px;
+    }
+  }
